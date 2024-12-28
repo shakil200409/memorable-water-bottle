@@ -1,0 +1,16 @@
+.bottle {
+  border: 2px solid springgreen;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+.bottle-img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.bottle-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
