@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Bottle from "../Bottle/Bottle";
 import "./Bottles.css";
 import { addToLS, getStoredData } from "../../utilites/localStorage";
+import Cart from "../Cart/Cart";
 
 const Bottles = () => {
   const [bottles, setBottles] = useState([]);
@@ -40,7 +41,7 @@ const Bottles = () => {
   return (
     <div>
       <h2>Bottles: {bottles.length}</h2>
-      <h3>Cart: {cart.length}</h3>
+      <Cart cart={cart}></Cart>
       <div className="bottles-container">
         {bottles.map((bottle) => (
           <Bottle
